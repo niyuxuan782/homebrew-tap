@@ -1,13 +1,13 @@
 cask "one-status" do
-  version "0.3.0"
+  version "0.5.0"
 
   on_arm do
-    sha256 "c82c24d273c55fdafd49a8edb5227f9eacfbdac1b3733c9985db3cfad412a074"
+    sha256 "a9571921a76c91df851ef800f91c5390d82a733880fcfda7308da01d6aa0c635"
 
     url "https://github.com/niyuxuan782/one-status/releases/download/v#{version}/One-Status-#{version}-mac-arm64.dmg"
   end
   on_intel do
-    sha256 "dad497d7a961fd3e835e36716c95b8d5a058321572cefddf010f2fa4e324c969"
+    sha256 "469161b870a834638eab523153abdea930a2474b9ce1b12bf031aab8ba1d60a9"
 
     url "https://github.com/niyuxuan782/one-status/releases/download/v#{version}/One-Status-#{version}-mac-x64.dmg"
   end
