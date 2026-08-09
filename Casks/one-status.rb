@@ -14,11 +14,11 @@ cask "one-status" do
 
   name "One Status"
   desc "Personal Agent control center for AI environment sync and handoff"
-  homepage "https://os.furesta.top/"
+  homepage "https://niyuxuan782.github.io/one-status/"
 
   depends_on :macos
 
-  app "One Status.app"
+  app "one-status.app", target: "One Status.app"
 
   caveats <<~EOS
     This preview build has not completed Apple Developer ID notarization.
