@@ -1,8 +1,8 @@
 class OneStatus < Formula
-  desc "Manage AI tools, models, Persona, and work state across devices"
+  desc "Manage AI tools, encrypted credentials, memory, and work state"
   homepage "https://github.com/niyuxuan782/one-status"
-  url "https://github.com/niyuxuan782/one-status/releases/download/v0.7.0/one-status-0.7.0.tgz"
-  sha256 "56c9b4795effc04cfabc5a90ae81f6bf2b062425fb0a7c29b0d662e1b882600b"
+  url "https://github.com/niyuxuan782/one-status/releases/download/v0.8.0/one-status-0.8.0.tgz"
+  sha256 "4ccefc5e6d2ebaf306f38b652dc6f7cd7e3aaf18d31351b7ef784e26fb0c7027"
   license all_of: ["Apache-2.0", "MIT"]
 
   depends_on "node"
@@ -10,14 +10,14 @@ class OneStatus < Formula
   on_macos do
     on_arm do
       resource "device-sidecar" do
-        url "https://github.com/niyuxuan782/one-status/releases/download/v0.7.0/one-status-device-sidecar-0.7.0-mac-arm64.tar.gz"
-        sha256 "0aebd332343451f59857a0f2d0576baca1606ad9f25b06ce395a615a4969a61d"
+        url "https://github.com/niyuxuan782/one-status/releases/download/v0.8.0/one-status-device-sidecar-0.8.0-mac-arm64.tar.gz"
+        sha256 "0249759ffdbcb33cbb389151e1e7c3eb1661d49f944468039a76d4c4a64c3208"
       end
     end
     on_intel do
       resource "device-sidecar" do
-        url "https://github.com/niyuxuan782/one-status/releases/download/v0.7.0/one-status-device-sidecar-0.7.0-mac-x64.tar.gz"
-        sha256 "49fd7ce299280ad726cc51c8a2d4d2539098afe9f85c4d57e8990f27aaff05a3"
+        url "https://github.com/niyuxuan782/one-status/releases/download/v0.8.0/one-status-device-sidecar-0.8.0-mac-x64.tar.gz"
+        sha256 "1d107f782776f105a3198b259b608be075bb19172551fea9489af46def4e9d75"
       end
     end
   end
@@ -25,8 +25,8 @@ class OneStatus < Formula
   on_linux do
     depends_on arch: :x86_64
     resource "device-sidecar" do
-      url "https://github.com/niyuxuan782/one-status/releases/download/v0.7.0/one-status-device-sidecar-0.7.0-linux-x64.tar.gz"
-      sha256 "693bea9187f4815a317501b5144e1ce52f33e798094a4f08669d15c6abb427d7"
+      url "https://github.com/niyuxuan782/one-status/releases/download/v0.8.0/one-status-device-sidecar-0.8.0-linux-x64.tar.gz"
+      sha256 "12ff29ebed71504cb2cbce035f881b7f9b733cc8f9a6b67229015402f7a5f60e"
     end
   end
 
