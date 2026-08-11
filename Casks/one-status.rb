@@ -2,12 +2,12 @@ cask "one-status" do
   version "0.8.0"
 
   on_arm do
-    sha256 "49e1d1ad9ee1efcd37adbc9a312af53dfb4dbbf0d5e73baae03c97813654b9a5"
+    sha256 "a9f150cf5c3a47415e53284d45ec499150643909f665a918352008ec45f31a00"
 
     url "https://github.com/niyuxuan782/one-status/releases/download/v#{version}/One-Status-#{version}-mac-arm64.dmg"
   end
   on_intel do
-    sha256 "7111f64b4bb8d987d3197f25b6fd242350b87006c090079e93c1f90486e9c791"
+    sha256 "7f921945800f423e0f83a374c311b6b01bc3706e13f777a85ff9d8bc45b36082"
 
     url "https://github.com/niyuxuan782/one-status/releases/download/v#{version}/One-Status-#{version}-mac-x64.dmg"
   end
@@ -19,16 +19,4 @@ cask "one-status" do
   depends_on :macos
 
   app "one-status.app", target: "One Status.app"
-
-  postflight do
-    system_command "/usr/bin/xattr",
-                   args: ["-cr", "#{appdir}/One Status.app"]
-    system_command "/usr/bin/codesign",
-                   args: ["--verify", "--deep", "--strict", "#{appdir}/One Status.app"]
-  end
-
-  caveats <<~EOS
-    This preview build has not completed Apple Developer ID notarization.
-    Homebrew verifies the checksum, clears quarantine, and verifies the ad-hoc signature.
-  EOS
 end
